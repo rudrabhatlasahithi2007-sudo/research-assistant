@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <main class="app">
+        <header class="header">
+            <div class="logo">✦</div>
+            <div>
+                <h1>Research Assistant</h1>
+                <p>Understand. Explore. Remember.</p>
+            </div>
+        </header>
+
+        <section class="tool-card">
+            <h2>AI Research Tools</h2>
+            <p class="section-description">
+                Select text on a webpage, then choose a tool.
+            </p>
+
+            <button id="summarizeBtn" class="tool-button summarize">
+                <span>📝</span> Summarize Selected Text
+            </button>
+
+            <button id="analyzeBtn" class="tool-button analyze">
+                <span>🔍</span> Analyze Research Gaps
+            </button>
+
+            <button id="quizBtn" class="tool-button quiz">
+                <span>🧠</span> Generate Active Recall Quiz
+            </button>
+        </section>
+
+        <section class="section results-section">
+            <div class="section-heading">
+                <h2>Results</h2>
+                <span class="status-dot"></span>
+            </div>
+            <p id="resultSubtitle" class="section-description">
+                Your AI-generated results will appear here.
+            </p>
+            <div id="results" class="results-content" aria-live="polite">
+                <p class="empty-state">
+                    ✨ Select text on a webpage and start exploring.
+                </p>
+            </div>
+        </section>
+
+        <section class="section notes-section">
+            <div class="section-heading">
+                <h2>Research Notes</h2>
+                <span class="notes-icon">✎</span>
+            </div>
+
+            <textarea
+                id="notes"
+                placeholder="Write your research notes here..."
+                rows="6"
+            ></textarea>
+
+            <div class="notes-actions">
+                <button id="saveNotesBtn" class="secondary-button">
+                    Save Notes
+                </button>
+                <button id="clearNotesBtn" class="clear-button">
+                    Clear Notes
+                </button>
+            </div>
+            <p id="notesStatus" class="status-message"></p>
+        </section>
+
+        <footer>
+            <p>AI-generated results may need verification.</p>
+        </footer>
+    </main>
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>

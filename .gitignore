@@ -1,0 +1,15 @@
+
+# Java / Spring Boot
+backend/target/
+*.class
+
+# Secrets and environment files
+backend/.env
+frontend/.env
+.env
+.env.*
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
