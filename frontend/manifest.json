@@ -13,9 +13,10 @@
     ],
 
     "host_permissions": [
-        "<all_urls>",
-        "http://localhost:8081/*"
-    ],
+  "<all_urls>",
+  "http://localhost:8081/*",
+  "https://your-service-name.onrender.com/*"
+],
 
     "icons": {
         "16": "AI Study Assistant Icon.png",

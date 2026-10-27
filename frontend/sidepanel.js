@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const response = await fetch(
-                "http://localhost:8081/api/research/process",
+                "https://research-assistant-api-6iym.onrender.com/api/research/process",
                 {
                     method: "POST",
                     headers: {
